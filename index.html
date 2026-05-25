@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio | Graphic Designer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full bg-[#0f172a]/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">
+                JP.<span class="text-indigo-400">DESIGNS</span>
+            </a>
+            
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+                <a href="#home" class="hover:text-indigo-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-indigo-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#certs" class="hover:text-indigo-400 transition-colors">Certs</a>
+                <a href="#education" class="hover:text-indigo-400 transition-colors">Education</a>
+                <a href="#contact" class="px-4 py-2 rounded-full bg-indigo-600 text-white hover:bg-indigo-500 transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-400 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0f172a] border-b border-slate-800 px-6 py-4 space-y-4 text-center">
+            <a href="#home" class="block text-slate-400 hover:text-indigo-400 py-2">Home</a>
+            <a href="#about" class="block text-slate-400 hover:text-indigo-400 py-2">About</a>
+            <a href="#experience" class="block text-slate-400 hover:text-indigo-400 py-2">Experience</a>
+            <a href="#projects" class="block text-slate-400 hover:text-indigo-400 py-2">Projects</a>
+            <a href="#certs" class="block text-slate-400 hover:text-indigo-400 py-2">Certs</a>
+            <a href="#education" class="block text-slate-400 hover:text-indigo-400 py-2">Education</a>
+            <a href="#contact" class="block bg-indigo-600 text-white rounded-lg py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- 1. HOME SECTION -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-24 px-6 relative overflow-hidden">
+        <!-- Decorative Background Glows -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-4xl text-center z-10">
+            <span class="text-indigo-400 font-semibold tracking-widest uppercase text-sm block mb-4">Available for Opportunities</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Bringing Ideas to Life Through <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Visual Storytelling</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Hi, I'm a passionate Graphic Designer specializing in brand identity, print, and digital design.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-medium hover:opacity-90 transition-opacity shadow-lg shadow-indigo-600/20">
+                    View My Work
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-medium hover:bg-slate-800 transition-colors">
+                    Let's Chat
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto scroll-mt-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Profile Placeholder Box -->
+            <div class="relative group justify-self-center lg:justify-self-start">
+                <div class="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative w-72 h-96 md:w-80 md:h-[420px] bg-slate-800 rounded-2xl flex items-center justify-center text-slate-500 border border-slate-700 overflow-hidden">
+                    <!-- Replace with real image like: <img src="profile.jpg" class="object-cover w-full h-full" alt="Profile"> -->
+                    <img src="me.jpg" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" alt="My Profile Photo">
+                </div>
+            </div>
+            
+            <!-- About Text & Core Skills -->
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+                <p class="text-slate-400 leading-relaxed mb-6">
+                    Hi, I'm Joeren Gabriel Pollenza, I am a Graphic Designer, Layout Artist , and UI/UX Designer based in Philippines. Currently, I am pursuing my Bachelor of Science in Information Systems at Davao del Norte State College.
+                </p>
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    Beyond the screen, I have years of hands-on industry experience translating client visions into physical, print-ready merchandise. From corporate t-shirts, athletic jerseys, and promotional giveaways to corporate shirts and  logos and large-scale tarpaulins , I focus on sharp visual hierarchy , vibrant branding, and professional layout execution.
+                </p>
+                
+                <!-- Toolkit / Skills Grid -->
+                <h3 class="text-lg font-semibold mb-4 text-slate-200">My Creative Toolkit</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <div class="bg-slate-800/50 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
+                        <i class="fa-brands fa-adobe text-xl text-red-500"></i> <span class="text-sm font-medium">Photoshop</span>
+                    </div>
+                    <div class="bg-slate-800/50 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
+                        <i class="fa-brands fa-adobe text-xl text-orange-500"></i> <span class="text-sm font-medium">Illustrator</span>
+                    </div>
+                    <div class="bg-slate-800/50 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
+                        <i class="fa-brands fa-figma text-xl text-purple-400"></i> <span class="text-sm font-medium">Figma</span>
+                    </div>
+                    <div class="bg-slate-800/50 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-pen-nib text-xl text-indigo-400"></i> <span class="text-sm font-medium">Branding</span>
+                    </div>
+                    <div class="bg-slate-800/50 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-bezier-curve text-xl text-emerald-400"></i> <span class="text-sm font-medium">Vector Art</span>
+                    </div>
+                    <div class="bg-slate-800/50 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-layer-group text-xl text-amber-400"></i> <span class="text-sm font-medium">Print Layout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-slate-800 max-w-7xl mx-auto">
+
+    <!-- 3. EXPERIENCE SECTION -->
+    <section id="experience" class="py-24 px-6 max-w-xl mx-auto scroll-mt-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Work Experience</h2>
+        
+        <div class="relative border-l-2 border-indigo-500/30 pl-8 ml-4 sm:ml-6">
+            
+            <div class="relative group">
+                <div class="absolute -left-[39px] top-1 w-4 h-4 bg-indigo-500 border-4 border-[#0f172a] rounded-full group-hover:bg-pink-400 transition-colors"></div>
+                
+                <div>
+                    <span class="text-xs font-semibold text-indigo-400 tracking-wider uppercase bg-indigo-500/10 px-3 py-1 rounded-full">2022 - Present</span>
+                    <h3 class="text-2xl font-bold mt-3 text-slate-100">Graphic Designer / Layout Artist</h3>
+                    <h4 class="text-base text-slate-400 font-medium mb-4">J&K Printing Services</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-lg">
+                        Managing end-to-end print design production, setting up complex pre-press vector layouts, and collaborating closely with clients to bring branding, signage, and publication designs to life with precise color accuracy and structural alignment.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="border-slate-800 max-w-7xl mx-auto">
+
+    <!-- 4. PROJECTS SECTION -->
+    <section id="projects" class="py-24 px-6 max-w-7xl mx-auto scroll-mt-10">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Projects & Services</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">A premium digital showcase of technical pre-press layouts, scalable corporate identities, and production-ready sublimation vector configurations.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-slate-800/20 border border-slate-800 rounded-3xl overflow-hidden group hover:border-slate-700 hover:bg-slate-800/30 transition-all duration-300 flex flex-col">
+                <div class="bg-slate-900 p-4 flex flex-col gap-2 justify-center border-b border-slate-800/50">
+                    <img src="sport.jpg" class="w-full h-40 object-cover rounded-xl group-hover:scale-[1.02] transition-transform duration-500" alt="Uma Markets Soccer Jersey">
+                    <div class="grid grid-cols-3 gap-1.5">
+                        <img src="jersey1.jpg" class="h-12 w-full object-cover rounded-lg border border-slate-800" alt="Apache Warrior Jersey Variant">
+                        <img src="jersey2.jpg" class="h-12 w-full object-cover rounded-lg border border-slate-800" alt="Tribal Team 07 Variant">
+                        <img src="jersey3.jpg" class="h-12 w-full object-cover rounded-lg border border-slate-800" alt="Urban Hustle Graffiti Variant">
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-indigo-400 tracking-wider uppercase bg-indigo-500/10 px-2.5 py-1 rounded-full w-fit">Sports Apparel</span>
+                        <h3 class="text-lg font-bold mt-3 mb-2 text-slate-100">Full-Sublimation Team Athletic Wear</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            Technical panel-by-panel apparel layouts optimized for vibrant sublimation output. Ranging from corporate leagues like Uma Markets to intense graphic styles including graffiti and cultural tribal matrices.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-800/40">
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-brands fa-adobe text-orange-500"></i> Illustrator</span>
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-solid fa-print text-indigo-400"></i> Print-Ready</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/20 border border-slate-800 rounded-3xl overflow-hidden group hover:border-slate-700 hover:bg-slate-800/30 transition-all duration-300 flex flex-col">
+                <div class="h-56 bg-slate-900 relative overflow-hidden border-b border-slate-800/50">
+                    <img src="copr.jpg" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" alt="SVF Choir Sublimation Polo">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-emerald-400 tracking-wider uppercase bg-emerald-500/10 px-2.5 py-1 rounded-full w-fit">Merchandise</span>
+                        <h3 class="text-lg font-bold mt-3 mb-2 text-slate-100">SVF Choir Sublimation Polo</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            Custom uniform layout combining embedded music-staff vector backgrounds with a clean brand lockup. Designed perfectly to line up seamlessly over complex shoulder panels and fabric seams.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-800/40">
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-brands fa-adobe text-orange-500"></i> Illustrator</span>
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-solid fa-shirt text-emerald-400"></i> Apparel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/20 border border-slate-800 rounded-3xl overflow-hidden group hover:border-slate-700 hover:bg-slate-800/30 transition-all duration-300 flex flex-col">
+                <div class="h-56 bg-slate-900 relative overflow-hidden flex items-center justify-center p-6 border-b border-slate-800/50">
+                    <img src="logo.jpg" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500" alt="JP Concept Clothing & Design Logo">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-purple-400 tracking-wider uppercase bg-purple-500/10 px-2.5 py-1 rounded-full w-fit">Corporate Identity</span>
+                        <h3 class="text-lg font-bold mt-3 mb-2 text-slate-100">JP Concept Identity Framework</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            A high-impact vector insignia optimized for multi-surface scalability. Features bold interlocking technical lines built to maintain absolute legibility from large store banners to micro shirt tags.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-800/40">
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-solid fa-bezier-curve text-purple-400"></i> Vector</span>
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-solid fa-shield-halved text-cyan-400"></i> Branding</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/20 border border-slate-800 rounded-3xl overflow-hidden group hover:border-slate-700 hover:bg-slate-800/30 transition-all duration-300 flex flex-col">
+                <div class="h-56 bg-slate-900 relative overflow-hidden flex items-center justify-center p-6 border-b border-slate-800/50">
+                    <img src="medal.jpg" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500" alt="Sci-Math Club Service Award Seal">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-amber-400 tracking-wider uppercase bg-amber-500/10 px-2.5 py-1 rounded-full w-fit">Emblem Design</span>
+                        <h3 class="text-lg font-bold mt-3 mb-2 text-slate-100">Sci-Math Club Service Award</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            A complex circular award medallion layout featuring concentric text paths, custom braided rope border matrices, and fine vector iconography calibrated for physical metal casting or decal production.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-800/40">
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-brands fa-adobe text-blue-500"></i> Photoshop</span>
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-solid fa-award text-amber-400"></i> Medal Seal</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/20 border border-slate-800 rounded-3xl overflow-hidden group hover:border-slate-700 hover:bg-slate-800/30 transition-all duration-300 flex flex-col">
+                <div class="h-56 bg-slate-900 relative overflow-hidden flex items-center justify-center p-6 border-b border-slate-800/50">
+                    <img src="esmino.jpg" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500" alt="Esmino Farm Rice Bowl Logo">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-lime-400 tracking-wider uppercase bg-lime-500/10 px-2.5 py-1 rounded-full w-fit">Agricultural Branding</span>
+                        <h3 class="text-lg font-bold mt-3 mb-2 text-slate-100">Esmino Farm Identity Emblem</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            A clean organic vector badge using a cohesive balanced color scheme. Combines intricate wheat stalks, a centered rising sun, and a structured badge system tailored for product labeling and stamping.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-800/40">
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-brands fa-adobe text-orange-500"></i> Illustrator</span>
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-solid fa-wheat-awn text-lime-400"></i> Agri-Badge</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/20 border border-slate-800 rounded-3xl overflow-hidden group hover:border-slate-700 hover:bg-slate-800/30 transition-all duration-300 flex flex-col">
+                <div class="h-56 bg-slate-900 relative overflow-hidden flex items-center justify-center p-6 border-b border-slate-800/50">
+                    <img src="Pio barte.jpg" class="max-h-full max-w-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500" alt="Pio Barte Family Reunion Insignia">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-rose-400 tracking-wider uppercase bg-rose-500/10 px-2.5 py-1 rounded-full w-fit">Custom Illustration</span>
+                        <h3 class="text-lg font-bold mt-3 mb-2 text-slate-100">Pio Barte Family Reunion Brand</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            Vibrant illustrative composition showcasing precise multicolored blending filters. Includes a custom background tree layout with complex gradient leaf overlays and crisp typography built for souvenir garments.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-800/40">
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-solid fa-palette text-rose-400"></i> Gradient Art</span>
+                        <span class="text-[11px] bg-slate-800/80 px-2 py-0.5 rounded-md text-slate-300 flex items-center gap-1"><i class="fa-solid fa-cloud-sun text-yellow-400"></i> Merchandise</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="border-slate-800 max-w-7xl mx-auto">
+
+    <!-- 5 & 6. CERTS & EDUCATION SECTION -->
+    <section class="py-24 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+        
+        <!-- 5. CERTS COLUMN -->
+        <div id="certs" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <i class="fa-solid fa-award text-2xl text-indigo-400"></i>
+                <h2 class="text-2xl md:text-3xl font-bold">Certifications</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-slate-800/30 border border-slate-800 p-5 rounded-xl flex items-start gap-4 hover:border-indigo-500/40 transition-colors">
+                    <div class="bg-indigo-600/10 p-3 rounded-lg text-indigo-400">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-2 py-0.5 rounded">Verified Badge</span>
+                        <h4 class="font-bold text-slate-100 mt-1">CCNA: Switching, Routing, and Wireless Essentials</h4>
+                        <p class="text-sm text-slate-400 mt-0.5">Issued by Cisco (CCNA) • Dec. 3, 2025</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/30 border border-slate-800 p-5 rounded-xl flex items-start gap-4 hover:border-indigo-500/40 transition-colors">
+                    <div class="bg-indigo-600/10 p-3 rounded-lg text-indigo-400">
+                        <i class="fa-solid fa-certificate text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-2 py-0.5 rounded">Verified Cert</span>
+                        <h4 class="font-bold text-slate-100 mt-1">Introduction to Networks</h4>
+                        <p class="text-sm text-slate-400 mt-0.5">Issued by Cisco (CCNA) • Dec. 3, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. EDUCATION COLUMN -->
+        <div id="education" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <i class="fa-solid fa-graduation-cap text-2xl text-purple-400"></i>
+                <h2 class="text-2xl md:text-3xl font-bold">Education</h2>
+            </div>
+
+            <div class="space-y-6 border-l-2 border-purple-500/30 pl-6 ml-2">
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-purple-400 rounded-full group-hover:bg-pink-400 transition-colors"></div>
+                    
+                    <span class="text-xs font-semibold text-purple-400 tracking-wider bg-purple-500/10 px-3 py-1 rounded-full">August 2024 — July 2028</span>
+                    <h3 class="text-xl font-bold text-slate-100 mt-3">Bachelor of Science in Information Systems</h3>
+                    <h4 class="text-base text-slate-300 font-medium mt-1">Davao del Norte State College</h4>
+                    <p class="text-indigo-400 text-sm font-medium mt-1">Major in Management Information Systems and Services</p>
+                    
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Blending creative layout design with database management and structural systems. This technical background allows me to bring a data-driven, strategic mindset to graphic design, user interface structures, and tech layouts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-slate-800 max-w-7xl mx-auto">
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="py-24 px-6 max-w-4xl mx-auto scroll-mt-10">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-slate-400 max-w-md mx-auto">Feel free to reach out for design commissions, system collaborations, or professional inquiries.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <a href="https://www.facebook.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" 
+               class="bg-slate-800/20 border border-slate-800 rounded-2xl p-6 text-center block group hover:border-blue-500 hover:bg-blue-500/5 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-600/10 text-blue-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <h3 class="font-bold text-slate-100 text-lg mb-1">Facebook</h3>
+                <p class="text-xs text-slate-500 group-hover:text-slate-400">Message me directly</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" 
+               class="bg-slate-800/20 border border-slate-800 rounded-2xl p-6 text-center block group hover:border-sky-500 hover:bg-sky-500/5 transition-all duration-300">
+                <div class="w-14 h-14 bg-sky-600/10 text-sky-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 group-hover:bg-sky-500 group-hover:text-white transition-all">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <h3 class="font-bold text-slate-100 text-lg mb-1">LinkedIn</h3>
+                <p class="text-xs text-slate-500 group-hover:text-slate-400">Professional network</p>
+            </a>
+
+            <a href="mailto:your.email@gmail.com" 
+               class="bg-slate-800/20 border border-slate-800 rounded-2xl p-6 text-center block group hover:border-rose-500 hover:bg-rose-500/5 transition-all duration-300">
+                <div class="w-14 h-14 bg-rose-600/10 text-rose-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 group-hover:bg-rose-600 group-hover:text-white transition-all">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <h3 class="font-bold text-slate-100 text-lg mb-1">Gmail</h3>
+                <p class="text-xs text-slate-500 group-hover:text-slate-400">pollenza.joeren2.0@gmail.com</p>
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+            <p class="text-xs text-slate-500">&copy; 2026 JPDesigns. All Rights Reserved.</p>
+            
+            <div class="flex space-x-6 text-slate-400 text-xl">
+                <a href="https://www.facebook.com/joeren.polenza" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/joeren-gabriel-pollenza-46201a409" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:pollenza.joeren2.0@gmail.com" class="hover:text-rose-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile responsive navigation menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+
+        // Close mobile nav items cleanly when clicking links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-xmark');
+            });
+        });
+    </script>
+</body>
+</html>
